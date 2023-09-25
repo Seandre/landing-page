@@ -8,19 +8,19 @@ body {
 .button-container {
     display: flex;
     text-align: center;
-    padding: 8px;
 }
 
 button {
     display: block;
-    margin: 0 auto;
     color: #f9FAf8;
     background: #3882F6;
-    border: 1px solid #eee;
     padding: 8px 24px;
+    border-radius: 8px;
+    border: none;
+    width: 110px
   }
 
-.header{
+.header {
     display: flex;
     background: #1F2937;
     font-family: Arial, Helvetica, sans-serif;
@@ -30,7 +30,7 @@ button {
     align-items: center;
 }
 
-.header-logo{
+.header-logo {
     margin-left: 3em;
     font-weight: bold;
 }
@@ -52,7 +52,17 @@ button {
     background: #1F2937;
     flex-direction: row;
     flex-grow: 1;
+}
 
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 5em;
+    margin-right: 2em;
+    width: 50%;
+    gap: 5px;
 }
 
 .hero-main {
@@ -60,14 +70,19 @@ button {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 48px;
     font-weight: bolder;
-    margin-left: 3em;
+    align-content: flex-start;
+}
+
+.hero-text {
+    display: flex;
+    width: 50px;
 }
 
 .hero-description {
     color: #E5E7EB;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    margin-left: 3em
+
 }
 
 img {
